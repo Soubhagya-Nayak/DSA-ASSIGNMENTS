@@ -9,6 +9,7 @@ class node {
 public class Q1 {
     public static node create(node start) {
         Scanner dk = new Scanner(System.in);
+        char ch;
         node a = new node();
         do {
             node n = new node();
@@ -25,7 +26,7 @@ public class Q1 {
                 a = n;
             }
             System.out.print("Enter Y to add next value in node: ");
-            char ch = dk.next().charAt(0);
+            ch = dk.next().charAt(0);
         } while (ch == 'y');
         return start;
     }
